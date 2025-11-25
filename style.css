@@ -1,0 +1,179 @@
+/* ---------- GLOBAL ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: whitesmoke;
+    padding: 40px 15px;
+    color: #222;
+}
+
+/* ---------- PAGE LAYOUT ---------- */
+.page-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.page-header .subtitle {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ---------- CARD / FORM CONTAINER ---------- */
+.card {
+    background: lavenderblush;
+    padding: 28px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+    border: 1px solid #e0e0e0;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+}
+
+/* ---------- FORM ELEMENTS ---------- */
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 4px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.required {
+    color: #d93025;
+}
+
+/* Inputs, select, textarea */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 11px;
+    border-radius: 8px;
+    border: 1.6px solid #c9c9c9;
+    background: #ffffff;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #87abe6;
+    background: #ffffff;
+    box-shadow: 0 0 6px rgba(66, 135, 245, 0.3);
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* ---------- RADIO GROUP ---------- */
+.radio-group {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.radio-label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #444;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #d2b7e2;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #64a1de, #357ae8);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #904be5, #1e5cd6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(30, 92, 214, 0.3);
+}
+
+/* ---------- FOOTER NOTE ---------- */
+.page-footer {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 700px) {
+    .card {
+        padding: 22px 18px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+    }
+}
+
+/* cd "C:\Users\Sanjana M L\OneDrive\Desktop\sanjana"
+"C:\xampp\php\php.exe" -S localhost:9000
+http://registration-form-2025.infinityfreeapp.com */
